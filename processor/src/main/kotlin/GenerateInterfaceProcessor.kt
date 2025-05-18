@@ -1,3 +1,6 @@
+package com.metehanbolat.processor
+
+import com.metehanbolat.annotations.GenerateInterface
 import com.palantir.javapoet.*
 import javax.annotation.processing.AbstractProcessor
 import javax.annotation.processing.RoundEnvironment

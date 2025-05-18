@@ -1,5 +1,7 @@
 package com.metehanbolat
 
+import com.metehanbolat.annotations.GenerateInterface
+
 fun main() {
     println("Test")
 }
@@ -14,6 +16,7 @@ interface UserRepository {
 }
 
 
+@GenerateInterface(name = "MongoUserRepository")
 class MongoUserRepository : UserRepository {
     override fun findUser(userId: String): User? {
         TODO("Not yet implemented")
@@ -32,6 +35,7 @@ class MongoUserRepository : UserRepository {
     }
 }
 
+@GenerateInterface(name = "FakeUserRepository")
 class FakeUserRepository : UserRepository {
     private var users = listOf<User>()
 

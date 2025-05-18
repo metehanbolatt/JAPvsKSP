@@ -11,7 +11,7 @@ repositories {
 
 dependencies {
     implementation("com.palantir.javapoet:javapoet:0.7.0")
-    implementation(project(":processor"))
+    implementation(project(":annotations"))
 }
 
 kotlin {
