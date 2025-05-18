@@ -12,7 +12,7 @@ repositories {
 
 dependencies {
     implementation(project(":annotations"))
-    implementation(project(":processor"))
+    kapt(project(":processor"))
 }
 
 kotlin {
